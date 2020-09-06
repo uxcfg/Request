@@ -1,0 +1,163 @@
+.search-bar {
+  height: 65px;
+  background-color: #e8e7e7;
+
+  display: flex;
+  align-items: center;
+}
+
+.search-bar__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar__logo__text {
+  display: inline;
+  font-size: 33px;
+
+  margin-left: 7px;
+}
+
+.search-bar__logo__text span {
+  text-transform: uppercase;
+}
+
+/* Search panel */
+
+.search-panel {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.search-panel__wrap {
+  display: flex;
+  width: 100%;
+}
+
+.search-panel__select {
+  height: 35px;
+  width: 68px;
+  appearance: none;
+
+  border: none;
+  border-right: 1px solid #e8e7e7;
+  border-radius: 5px 0 0 5px;
+  background: url(../../img/search-bar/dropdown-arrow.svg) no-repeat center;
+  background-position-x: 48px;
+  background-color: #f1f1f1;
+  color: $font-gray;
+  outline: none;
+
+  padding: 0 20px 0;
+  cursor: pointer;
+}
+
+.search-panel__select option[selected] {
+  font-size: 16px;
+  color: $font-gray;
+  text-align: center;
+}
+
+.search-panel__search {
+  height: 34px;
+  width: 100%;
+
+  border: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+.search-panel__btn {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  background-color: $primary;
+  height: 35px;
+  width: 51px;
+
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+}
+
+.search-panel__btn:hover {
+  background-color: lighten($primary, 8);
+}
+
+.search-panel__btn img {
+  vertical-align: middle;
+}
+
+/* Portal */
+
+.portal__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.portal__img {
+  margin-right: 5px;
+}
+
+.portal__text {
+  width: 97px;
+
+  font-size: 14px;
+  font-weight: 300;
+  color: $font-gray;
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* Cart */
+
+.cart {
+  position: relative;
+  display: flex;
+  
+  cursor: pointer;
+}
+
+.cart__img {
+  margin-right: 12px;
+}
+
+.cart__img span {
+  position: absolute;
+  left: 10px;
+  top: -14px;
+
+  color: $primary;
+  font-size: 14px;
+}
+
+.cart__sum__wrap {
+  line-height: 1;
+}
+
+.cart__sum__wrap span {
+  color: $font;
+  font-size: 16px;
+}
+
+.cart__sum__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: $font-gray;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .search-bar {
+    display: none;
+  }
+}

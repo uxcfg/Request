@@ -1,0 +1,188 @@
+.info {
+  padding-bottom: 265px;
+}
+
+.info__wrap {
+  display: flex;
+}
+
+.info-content {
+  width: 58%;
+}
+
+.info-content__item {
+  margin-bottom: 35px;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: $font;
+
+  margin-bottom: 25px;
+}
+
+.about__text {
+  font-size: 18px;
+  font-weight: 300;
+  color: $font;
+  line-height: 1.3;
+}
+
+.info-content__title {
+  font-size: 40px;
+  font-weight: 300;
+  color: $font;
+  line-height: 1.3;
+
+  margin-bottom: 20px;
+}
+
+.info-content__text {
+  font-size: 18px;
+  font-weight: 300;
+  color: $font;
+  line-height: 1.3;
+}
+
+/* Company info */
+.company-info {
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  padding-left: 255px;
+  width: 42%;
+}
+
+.company-info__logo {
+  margin-bottom: 25px;
+}
+
+.company-info__title {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  color: $font;
+}
+
+.company-info__subtitle {
+  font-weight: 300;
+  line-height: 1;
+  color: #777777;
+
+  margin-bottom: 35px;
+}
+
+.company-info h2 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1;
+  color: #171717;
+}
+
+.company-info__results-title {
+  font-size: 18px;
+  color: #777777;
+
+  margin-bottom: 25px;
+}
+
+.company-info__results li {
+  color: #171717;
+  font-size: 18px;
+}
+
+.show-plus {
+  width: 49px;
+  height: 49px;
+  background-color: $bg-slider-footer-img;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+  cursor: pointer;
+}
+.show-plus span {
+  color: $white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .info { 
+    padding-bottom: 0;
+  }
+
+  .info__wrap {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .info-content {
+    order: 2;
+    width: 100%;
+  }
+
+  .about__title {
+    font-size: 50px;
+  }
+
+  .about__text {
+    font-size: 30px;
+  }
+
+  .info-content__item.offer {
+    display: none;
+  }
+
+  .company-info {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
+
+    margin-bottom: 135px;
+  }
+
+  .company-info__title {
+    font-size: 50px;
+  }
+
+  .company-info__subtitle {
+    font-size: 25px;
+  }
+
+  .company-info h2 {
+    font-size: 40px;
+  }
+
+  .company-info__results-title {
+    font-size: 30px;
+  }
+
+  .company-info__results li {
+    font-size: 30px;
+  }
+
+  .company-info__logo {
+    height: 249px;
+  }
+
+  .show-plus {
+    width: 100px;
+    height: 100px;
+
+    margin-bottom: 150px;
+  }
+
+  .show-plus span {
+    font-size: 50px;
+  }
+}

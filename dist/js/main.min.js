@@ -19,21 +19,10 @@
     if (e.target === form) {
       form.classList.toggle('active');
     }
-  }); // const mediaQuery = window.matchMedia('screen and (max-width: 767px)');
-  // mediaQuery.addListener(foo);
-  // const mediaQuery2 = window.matchMedia('screen and (min-width: 768px)');
-  // mediaQuery2.addListener(foo);
-  // function foo(mq, mq2) {
-  //   if (mq) {
-  //     img.setAttribute('src', '../../img/tel-mobile.svg');
-  //     link.remove();
-  //     cart.setAttribute('src', '../../img/cart-mobile.svg');
-  //   }
-  //   if  (mq2) {
-  //     img.setAttribute('src', '../../img/tel.svg');
-  //   }
-  // }
-  // window.addEventListener('resize', foo(mediaQuery, mediaQuery2));
+  });
+  window.addEventListener('wheel', e => {
+    form.classList.remove('active');
+  });
 
   const swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
