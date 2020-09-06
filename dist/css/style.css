@@ -494,7 +494,7 @@ img {
   border: none;
   border-right: 1px solid #e8e7e7;
   border-radius: 5px 0 0 5px;
-  background: url(../../img/search-bar/dropdown-arrow.svg) no-repeat center;
+  background: url(../img/search-bar/dropdown-arrow.svg) no-repeat center;
   background-position-x: 48px;
   background-color: #f1f1f1;
   color: #777777;
