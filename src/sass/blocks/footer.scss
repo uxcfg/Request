@@ -75,7 +75,7 @@
   .footer__wrap {
     display: flex;
     flex-direction: column;
-    padding: 72px  50px 40px;
+    padding: 72px 50px 40px;
   }
 
   .footer__item__inner {
@@ -88,12 +88,12 @@
     width: 100%;
     padding: 30px 0;
 
-    border-bottom: 1px solid rgba($color: $white, $alpha: .1);
+    border-bottom: 1px solid rgba($color: $white, $alpha: 0.1);
 
     cursor: pointer;
   }
 
-  .footer__item:last-child { 
+  .footer__item:last-child {
     border-bottom: none;
   }
 
@@ -106,5 +106,19 @@
     font-size: 30px;
     font-weight: 300;
     color: $white;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer__wrap {
+    padding: 29px 25px 31px;
+  }
+
+  .footer__item__mobile {
+    font-size: 16px;
+  }
+
+  .footer__item {
+    padding: 15px 0;
   }
 }
