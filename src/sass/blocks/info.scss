@@ -185,7 +185,8 @@
 
 @media (max-width: 575px) {
   .company-info__logo {
-    height: 0;
+    height: 50%;
+    width: 30%;
   }
 
   .company-info__subtitle {
@@ -198,11 +199,6 @@
 
   .company-info h2 {
     font-size: 28px;
-  }
-
-  .company-info__logo {
-    height: 50%;
-    width: 30%;
   }
 
   .company-info__results-title {
